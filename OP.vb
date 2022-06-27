@@ -9,6 +9,7 @@
         SET_THREAD_TOKEN = (&H80)
         IMPERSONATE = (&H100)
         DIRECT_IMPERSONATION = (&H200)
+        DIRECT_IMPERSONATION = (&H200)
     End Enum
 
     Public Declare Function OpenThread Lib "kernel32.dll" (ByVal dwDesiredAccess As ThreadAccess, ByVal bInheritHandle As Boolean, ByVal dwThreadId As UInteger) As IntPtr
